@@ -1,0 +1,46 @@
+/* Google Font Added */
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    height: 60vh;
+    text-align: center;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Online Games Section Style */
+.online-games-header {
+    text-align: center;
+    margin: 50px 0;
+}
+.online-games-title {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 700;
+}
+.online-games-description{
+    margin-top: 1rem;
+}
+.online-games-card-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.online-games-card-container>div>img {
+    margin-bottom: 1.5rem;
+}
+
+
+
+/* Utility Style */
+.bright-text {}
