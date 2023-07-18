@@ -8,6 +8,18 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+/* Header Style */
 header {
     padding: 30px 240px;
 
@@ -31,10 +43,6 @@ header {
     font-size: 95px;
     font-weight: 800;
     text-transform: uppercase;
-    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 .banner-point {
@@ -53,6 +61,7 @@ header {
     margin-right: 24px;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
 .sky-blue {
@@ -62,6 +71,14 @@ header {
 .pink {
     background: #FF42A5;
 }
+
+
+
+
+
+
+
+
 
 main {
     max-width: 1440px;
@@ -94,6 +111,57 @@ main {
 }
 
 
+/* Play instantly Section style */
+.play-instantly-section {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.play-text-container {
+    text-align: center;
+    font-weight: 700;
+    width: 50%;
+}
+.play-img-container{
+    width: 50%;
+}
+.play-text-container>div{
+    margin-bottom: 250px;
+}
+
+.play-text-container>div>p {
+    color: #534C64;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 24px;
+}
+.play-text {
+    font-size: 48px;
+}
+.relative-img{
+    position: relative; 
+    bottom: 200px; 
+    right: 120px;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Utility Style */
-.bright-text {}
+.bright-text {
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
