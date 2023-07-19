@@ -10,25 +10,63 @@
 
 
 
-
-
-
-
-
-
-
-
-
 /* Header Style */
 header {
     padding: 30px 240px;
+}
 
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo>h1 {
+    margin-left: 20px;
+}
+
+header nav ul {
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+.follow-us {
+    background-color: lightgrey;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+nav li a {
+    text-decoration: none;
+    margin-right: 20px;
 }
 
 .banner-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.banner-text-container {
+    width: 100%;
+}
+
+.banner-img {
+    width: 100%;
 }
 
 .banner-sub-heading {
@@ -52,6 +90,7 @@ header {
 
 .banner-btn-container {
     display: flex;
+    justify-content: center;
     margin-top: 41px;
 }
 
@@ -85,6 +124,8 @@ main {
     margin: 0 auto;
 }
 
+
+
 /* Online Games Section Style */
 .online-games-header {
     text-align: center;
@@ -106,10 +147,21 @@ main {
     justify-content: space-around;
 }
 
+.online-games-card>img:hover {
+    border-radius: 15px;
+    opacity: 0.3;
+    cursor: pointer;  
+}
+.play-btn{
+    position: relative;
+    bottom: 50%;
+    left: 40%;
+    display: none;
+}
+
 .online-games-card-container>div>img {
     margin-bottom: 1.5rem;
 }
-
 
 /* Play instantly Section style */
 .play-instantly-section {
@@ -122,11 +174,11 @@ main {
 .play-text-container {
     text-align: center;
     font-weight: 700;
-    width: 50%;
+    width: 100%;
 }
 
 .play-img-container {
-    width: 50%;
+    width: 100%;
 }
 
 .play-text-container>div {
@@ -152,20 +204,103 @@ main {
     right: 120px;
 }
 
-/* avatar section style */
-.avatar-section{
-    margin-bottom: 8rem;
+
+/* Mobile Device Responsiveness */
+@media screen and (max-width: 576px) {
+    /* header{
+        padding: 15px 0px;
+    }
+    header nav{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .banner-container{
+        flex-direction: column;
+    } */
+
+    .online-games-card-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .online-games-card-container>div {
+        margin: 20px 0;
+    }
+
+    .online-games-header {
+        margin: 20px 0;
+    }
+
+    .online-games-title {
+        font-size: 20px;
+    }
+
+    .online-games-card-container>div>p {
+        padding: 0 50px;
+    }
+
+
+
+    .play-instantly-section {
+        flex-direction: column;
+    }
+
+    .play-text-container {
+        margin-left: 150px;
+    }
+
+    .play-img-container {
+        width: 50%;
+    }
+
+    .play-text-container>div {
+        margin-bottom: 50px;
+    }
+
+
+
+    .avatar-section {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 0;
+    }
+
 }
-.avatar-first-row{
-    display: flex;
-    justify-content: space-evenly;
+
+/* avatar section style */
+.avatar-section {
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px;
+
+}
+
+.avatar-first-row {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     margin: 30px auto;
 }
-.avatar{
+
+.avatar-second-row {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 20px auto;
+    margin-left: 20px;
+}
+
+.avatar {
     display: flex;
     align-items: center;
 }
-.avatar>p{
+
+.avatar:hover {
+    border: 4px solid #FF42A5;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #F948B2;
+}
+
+.avatar>p {
     margin-left: 15px;
 }
 
@@ -196,9 +331,7 @@ footer {
 }
 
 .footer-navbar {
-    color: white;
     display: flex;
-    /* text-align: center; */
     margin: 20px 0;
 }
 
@@ -207,6 +340,23 @@ footer {
     color: #FFF;
     font-size: 18px;
     font-weight: 600;
+}
+
+.footer-icon-container {
+    margin: 30px 0px;
+}
+
+.footer-icon-container>i {
+    margin-left: 20px;
+}
+
+.footer-gray-text {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer-gray-text>p {
+    margin-left: 40px;
 }
 
 
@@ -225,8 +375,10 @@ footer {
     text-align: center;
 }
 
+.hide {
+    display: none;
+}
 
 .gray-text {
-    /* color: rgba(255, 255, 255, 0.60); */
-    color: red;
+    color: rgba(255, 255, 255, 0.60);
 }
